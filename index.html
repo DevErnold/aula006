@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 006</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icons8-laranja-48.png" type="image/x-icon">
+</head>
+<body>
+    <div class="menu">
+        <h1>Laranjinha Sistema de multas</h1>
+        <p>Velocidade do carro</p>
+        <input type="number" name="velocidade" id="velocidade">
+        <strong id="quilometros"> Km/h</strong>
+        <br>
+        <input id="botao" type="submit" value="Verificar" onclick="verificar()">
+        <div id="vResultado"></div>
+    </div>
+
+    <img src="icons8-laranja-48.png" alt="">
+
+    <script>
+        function verificar(){
+            let velocidade = document.getElementById('velocidade');
+            let vResultado = document.getElementById('vResultado');
+            let vel = Number(velocidade.value);
+            vResultado.innerHTML = ` Sua velocidade atual é de <strong>${vel} Km/h</strong>`;
+            if(vel > 60){
+                vResultado.innerHTML += ` Você está <strong>MULTADO!</strong>`;
+            } else{
+                vResultado.innerHTML += ` Parabéns, você não foi multado.`;
+            }
+        }
+    </script>
+
+    <footer>
+        <p>Desenvolvido por: Ernold</p>
+        <p><a href="https://github.com/DevErnold" target="blank">https://github.com/DevErnold</a></p>
+    </footer>
+</body>
+</html>
