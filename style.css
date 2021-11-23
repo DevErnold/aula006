@@ -18,7 +18,7 @@ body{
     width: 600px;
     padding: 30px;
     border-radius: 8px;
-    margin-top: 10vh;
+    margin-top: 5vh;
     box-shadow: -15px 15px orange;
 }
 
@@ -102,7 +102,7 @@ footer p{
     font-weight: 500;
 }
 
-footer p a{
+#link{
     text-decoration: none;
     color: white;
     font-weight: 500;
